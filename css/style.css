@@ -1,0 +1,197 @@
+html {
+	width: 100%;
+	height: 100%;
+}
+body {
+margin: 0 auto;
+width: 80%;
+height: 100%;
+
+}
+
+#container {
+
+
+	height: 100%;
+	width: 100%;
+}
+#old {
+	padding-top: 2em;
+	min-height: 100%;
+	width: 45%;
+
+	float: left;
+
+
+}
+
+#new {
+	float: left;
+	width: 45%;
+	padding-top: 2em;
+
+}
+
+#message {
+
+	height: 100%;
+   /* width: 90%; */
+	float: left;
+	font-family: century gothic;
+	font-size: 16pt;
+	padding: 1em;
+	margin-right: 20px;
+}
+
+#h1 {
+	font-family: century gothic;
+    display: block;
+
+    width: 100%;
+    height: 70px;
+    float: left;
+
+}
+
+#new_h1 {
+    width: 100%;
+    padding-left: 3%;
+    margin-left: 1em;
+
+}
+
+
+
+
+#newText {
+	/*position: relative;
+	width: 100%;
+	float: left;*/
+	margin-left: 1em;
+	font-size: 16pt;
+	padding: 1em;
+
+}
+
+.class0 {
+
+	font-family: arial;
+
+}
+
+.class1 {
+
+	font-family: sans-serif;
+	font-weight: bold;
+
+
+}
+
+.class2 {
+
+	font-family: century gothic;
+	background-color: #eee;
+
+
+}
+
+.class3 {
+
+	font-family: calibri;
+
+	background-color: #ffd;
+
+}
+
+.class4 {
+
+	font-family: century gothic;
+	color: red;
+
+}
+
+.class5 {
+
+	font-family: Corbel;
+}
+
+.class6 {
+
+	font-family: Dotum;
+	background-color: #ffd;
+}
+
+.class7 {
+
+	font-family: Tahoma;
+	font-weight: bold;
+}
+
+.class8 {
+
+	font-family: Segoe UI;
+}
+
+.class9 {
+
+	font-family: Verdana;
+
+}
+
+p {
+
+	text-transform: uppercase;
+}
+
+#copyright {
+color: #777;
+font-size: 10pt;
+position: absolute;
+z-index: 1;
+right: 5px;
+bottom: 10px;
+font-family: century ghotic;
+}
+
+#home {
+
+position: absolute;
+z-index: 1;
+left: 5px;
+bottom: 10px;
+font-family: century ghotic;
+
+}
+
+a {
+	text-decoration: none;
+	color: #777;
+	font-size: 10pt;
+}
+/* button*/
+
+#button {
+  	width: 50px;
+  	height: 50px;
+    background-color: #aaa;
+    border-radius: 100%  100%;
+    box-shadow: 5px 5px 2px rgba(0,0,0,0.5), inset 2px 2px 10px #777;
+    float: left;
+    margin: 250px 0 0 20px;
+}
+#button span {
+    display: block;
+    position: relative;
+    font-size: 14pt;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(f,f,f, 1);
+    margin: 15px;
+}
+
+#button:hover {
+
+   cursor: pointer;
+}
+#button:active {
+box-shadow: 0px 0px 0px rgba(0,0,0,0.5), inset 0px 0px 0px #777;
+}
