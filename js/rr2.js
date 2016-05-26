@@ -1,4 +1,3 @@
-//alert('hi');
 var  Color = new Array();
 Color[0] = 'red';
 Color[1] = 'blue';
@@ -50,110 +49,73 @@ function rr() {
 
 text = document.getElementById('message').value;
 newText.innerHTML = '';
-	for(i=0; i<text.length; i++) {
 
-//console.log('text length = '+text.length);
+for(i=0; i<text.length; i++) {
 
-var wrap = document.createElement('span');
-
-//console.log(wrap.className);
-
-var letter = text.substring(i,i+1);
-
-wrap.innerHTML = letter;
+	var wrap = document.createElement('span');
+	var letter = text.substring(i,i+1);
+	wrap.innerHTML = letter;
 
 //getting the big capital letter
 if(capital) {
-//	alert(capital);
-//	alert('Capital');
-	
+
 	if(letter==' '){
-//	alert('пробел');
-	newText.appendChild(wrap);
-				}
- 
+		newText.appendChild(wrap);
+	}
+
 //if it is not a space give the letter font-size 30 pt
 if (letter!=' '){
 
-//	alert('not equel');
-	wrap.style.fontSize = '30pt';
-	capital=false;
-} 
-
-} 
+		wrap.style.fontSize = '30pt';
+		capital=false;
+	}
+}
 
 //if it's a point next letter should be BIG
 if (letter=='.' || letter=='!' || letter=='?' ) {
-
-//	alert('точка');
-	capital=true;
-
-} 
+		capital=true;
+	}
 //not adding any style to the spaces
 
 if (letter==' '){
-
-newText.appendChild(wrap);
-
-} //end IF(capital)
-
-
-else {
-wrap.className = 'class'+Math.ceil(Math.random()*10);
-wrap.style.color = Color[Math.ceil(Math.random()*10)];
-//console.log(wrap);
-
-console.log('i=' + i);
-//alert(wrap.innerHTML);
-
-newText.appendChild(wrap);
-
+		newText.appendChild(wrap);
 	}
 
+	//end IF(capital)
+
+	else {
+		wrap.className = 'class'+Math.ceil(Math.random()*10);
+		wrap.style.color = Color[Math.ceil(Math.random()*10)];
+		newText.appendChild(wrap);
+	}
 }
-
 }
-
-
 
 function rrH1() {
 
-text = document.getElementById('h1').innerHTML;
+	text = document.getElementById('h1').innerHTML;
 
-//alert(text);
-new_h1.innerHTML = '';
+	new_h1.innerHTML = '';
+
 	for(i=0; i<text.length; i++) {
 
-//console.log('text length = '+text.length);
+		var wrap = document.createElement('span');
+		var letter = text.substring(i,i+1);
 
-var wrap = document.createElement('span');
-
-//console.log(wrap.className);
-
-var letter = text.substring(i,i+1);
-
-wrap.innerHTML = letter;
+		wrap.innerHTML = letter;
 
 //not adding any style to the spaces
 
 if (letter==' '){
-
-new_h1.appendChild(wrap);
-
-} 
-
-else {
-wrap.className = 'class'+Math.ceil(Math.random()*10);
-wrap.style.color = Color[Math.ceil(Math.random()*10)];
-console.log(wrap);
-
-console.log('i=' + i);
-new_h1.appendChild(wrap);
-	}
-
+	new_h1.appendChild(wrap);
 }
 
-
+	else {
+		wrap.className = 'class'+Math.ceil(Math.random()*10);
+		wrap.style.color = Color[Math.ceil(Math.random()*10)];
+		new_h1.appendChild(wrap);
+	}
+}
 }
 
 
